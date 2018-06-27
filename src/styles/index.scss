@@ -1,0 +1,40 @@
+@import '~bootstrap/scss/bootstrap.scss';
+ul {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  padding-left: 10px;
+  line-height: 2em;
+  margin: 0;
+  color: #666;
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+li.clicked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+span.close {
+  height: 35px;
+  width: 0;
+  margin-right: 10px;
+  margin-left: -10px;
+  text-align: center;
+  display: inline-block;
+  opacity: 0;
+  transition: .2s linear;  
+}
+
+li:hover span {
+  opacity: 1.0;
+  width: 40px;
+}
